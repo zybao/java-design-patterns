@@ -7,11 +7,11 @@ public class NameRepository implements Container {
     public String names[] = {"Robert", "John", "Julie", "Lora"};
 
     @Override
-    public Iterator getIterator() {
+    public NameIterator getIterator() {
         return new NameIterator();
     }
 
-    private class NameIterator implements Iterator {
+    public class NameIterator implements Iterator {
 
         int index;
 
